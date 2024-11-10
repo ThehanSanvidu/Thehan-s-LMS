@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to LMS</title>
+    <meta name="description" content="A Learning Management System offering online courses, user management, and personalized learning.">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="background">
+        <canvas id="bubbleCanvas"></canvas>
+    </div>
+    <header>
+        <h1>Welcome to the LMS</h1>
+        <nav>
+            <button><a href="pages/login.html">Login</a></button>
+            <button><a href="pages/register.html">Register</a></button>
+            <button><a href="pages/courses.html">Courses</a></button>
+            <button><a href="pages/dashboard.html">Dashboard</a></button>
+            <button><a href="pages/about.html">About</a></button>
+        </nav>
+    </header>
+    <main>
+        <h2>Explore Our Courses</h2>
+        <p>Our LMS offers a wide range of online courses designed to meet the needs of all learners. Whether you’re a beginner or looking to advance your skills, there’s something for you.</p>
+        <button onclick="location.href='pages/courses.html'" class="main-btn">View All Courses</button>
+        
+        <div class="course-list">
+            <!-- Example course listing, dynamic in a full application -->
+            <div class="course">
+                <h3>Introduction to Physics</h3>
+                <p>Learn the fundamentals of Physics, perfect for beginners!</p>
+                <button onclick="location.href='pages/course-details.html'" class="course-btn">View Details</button>
+                <button onclick="location.href='pages/login.html'" class="enroll-btn">Enroll Now</button>
+            </div>
+            <div class="course">
+                <h3>Basic Chemistry</h3>
+                <p>A course on basic chemistry principles and applications.</p>
+                <button onclick="location.href='pages/course-details.html'" class="course-btn">View Details</button>
+                <button onclick="location.href='pages/login.html'" class="enroll-btn">Enroll Now</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 LMS Inc.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.background {
+     position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure the background is behind other content */
+    opacity: 0.5; /* Optional: Make background semi-transparent to check content visibility */
+    background: linear-gradient(45deg, #42a5f5, #478ed1);
+    overflow: hidden;
+}
+/* .background {
+    // background styling code here
+} */
+
+
+header, footer {
+    text-align: center;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.course-list {
+    display: grid;
+    gap: 1em;
+}
+
+.course {
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+ #bubbleCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Ensure the canvas stays behind other content */
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+/* General button styling */
+button {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Specific styles for different button classes */
+.main-btn {
+    background-color: #4caf50;
+    color: white;
+}
+
+.course-btn {
+    background-color: #2196f3;
+    color: white;
+}
+
+.enroll-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}
